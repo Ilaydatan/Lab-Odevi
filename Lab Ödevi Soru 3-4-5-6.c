@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
-//Student isimli Struct Oluþturma ve Gerekli Bilgileri Yazma
+//Student isimli Struct OluÅŸturma ve Gerekli Bilgileri Yazma
 struct student{
 	char name[40];
 	int age;
@@ -12,7 +12,7 @@ struct student{
 typedef struct student node;
 node *head, *newnode;
 
-//Ogrenci Listesi Oluþturma
+//Ogrenci Listesi OluÅŸturma
 struct student *creatList(){
 	node *head ,*p;
 	int n,i;
@@ -38,7 +38,7 @@ struct student *creatList(){
 	p->next=NULL;
 	return head;
 }
-//Listede Gezinme ve Ogrenci Bilgilerini Yazdýrma
+//Listede Gezinme ve Ogrenci Bilgilerini YazdÄ±rma
 void traverseList(node* head)
 {
 	int counter=1;
@@ -74,7 +74,7 @@ void search(node *head){
 		    counter++;
 	}
 }
-//Listedeki Düðümü Silme
+//Listedeki DÃ¼ÄŸÃ¼mÃ¼ Silme
 void deleted(node *head){
 	
 	char searchName[40];
@@ -113,15 +113,21 @@ char* longName(node *head) {
 
     return longestName;
 }
-//Main Fonksiyonu Ýçinde Fonksiyonlarý Yazdýrma
+//Main Fonksiyonu Ä°Ã§inde FonksiyonlarÄ± YazdÄ±rma
 int main()
 {
 	node* head=NULL;
 	int secim;
 	head=creatList();
+	printf("1-Ogrenci Bilgilerini YazdÄ±rma
+		2-Ogrenci KaydÄ±nÄ± Arama
+		3-Aranan Ä°simden Sonraki Dugumu Silme
+		4-En Uzun Ä°smi Bulma");
 
 	printf("Lutfen seciminizi giriniz(1-4):");
 	scanf("%d",&secim);
+	
+	
 	
     switch(secim)
     {
