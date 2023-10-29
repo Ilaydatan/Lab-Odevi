@@ -119,10 +119,10 @@ int main()
 	node* head=NULL;
 	int secim;
 	head=creatList();
-	printf("1-Ogrenci Bilgilerini Yazdırma
-		2-Ogrenci Kaydını Arama
-		3-Aranan İsimden Sonraki Dugumu Silme
-		4-En Uzun İsmi Bulma");
+	printf("1-Ogrenci Bilgilerini Yazdırma"
+		"2-Ogrenci Kaydını Arama"
+		"3-Aranan İsimden Sonraki Dugumu Silme"
+		"4-En Uzun İsmi Bulma");
 
 	printf("Lutfen seciminizi giriniz(1-4):");
 	scanf("%d",&secim);
